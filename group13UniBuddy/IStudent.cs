@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace group13UniBuddy
 {
-    public class Department
+    internal interface IStudent
     {
-
     }
 }

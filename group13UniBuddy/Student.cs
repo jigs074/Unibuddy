@@ -3,42 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections; 
+using System.Collections;
+using System.Globalization;
 
 namespace group13UniBuddy
 {
+    public class Student:IStudent
+    {
+        string Name { get; set; }
+        int Age { get; set; }
+        string Category { get; set; }
+        string Program { get; set; }
+        string StudentNo { get; set; }
+
+        string departmentName { get; set; }
+
+        public List<Student> student { get; set; }
+
+        public Student(string Name,int Age,string Category,string Program,string StudentNo,string departmentName)
+        {
+            this.Name= Name;
+            this.Age= Age;
+            this.Category= Category;
+            this.Program= Program;
+            this.StudentNo= StudentNo;
+            this.departmentName= departmentName;
+            this.student = new List<Student>();
+        }
+
+        public void addStudent(Student std)
+        {
+            student.Add(std);
+        }
+
+        public void removeStudent(Student std)
+        {
+            student.Remove(std);
+        }
+    }
    
        
     
-        public class Student
-        {
-            public string Name { get; set; }
-            public int Age { get; set; }
-            public string Category { get; set; }
-            public string Program { get; set; }
-            public string StudentNo { get; set; }
-        }
-
-        public class StudentList : IEnumerable<Student>
-        {
-            private List<Student> _students = new List<Student>();
-
-            public void Add(Student student)
-            {
-                _students.Add(student);
-            }
-
-            public IEnumerator<Student> GetEnumerator()
-            {
-                return _students.GetEnumerator();
-            }
-
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                return GetEnumerator();
-            }
-        }
-    }
+}
 
 
 
