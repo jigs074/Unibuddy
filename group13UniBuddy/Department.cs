@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace group13UniBuddy
 {
-    internal class Department
+    public class Department:Student
     {
+        Student s; 
+
+        string getDepartment(string studentNo)
+        {
+            s.StudentNo = studentNo;
+            return s.DepartmentName; 
+            
+
+        }
+
     }
 }
