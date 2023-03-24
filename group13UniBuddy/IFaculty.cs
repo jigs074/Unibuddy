@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace group13UniBuddy
 {
-    internal interface IFaculty
+    public interface IFaculty
     {
+        public void addFaculty(Faculty faculty);
+
+        public void removeFaculty(Faculty faculty);
     }
 }

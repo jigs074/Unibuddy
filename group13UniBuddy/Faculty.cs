@@ -10,11 +10,11 @@ namespace group13UniBuddy
 
     public class Faculty:IFaculty
     {
-        string Name { get; set; }
+        public string Name { get; set; }
         
-        int facultyId { get; set; }
+        public int facultyId { get; set; }
 
-        string departmentName { get; set; }
+        public string departmentName { get; set; }
 
         public List<Faculty> faculty { get; set; }
 

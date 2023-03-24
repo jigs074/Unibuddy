@@ -10,13 +10,13 @@ namespace group13UniBuddy
 {
     public class Student:IStudent
     {
-        string Name { get; set; }
-        int Age { get; set; }
-        string Category { get; set; }
-        string Program { get; set; }
-        string StudentNo { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Category { get; set; }
+        public string Program { get; set; }
+       public string StudentNo { get; set; }
 
-        string departmentName { get; set; }
+        public string departmentName { get; set; }
 
         public List<Student> student { get; set; }
 
