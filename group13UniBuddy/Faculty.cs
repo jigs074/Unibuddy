@@ -8,65 +8,49 @@ using System.Threading.Tasks;
 namespace group13UniBuddy
 {
 
-    public class Faculty
+    public class Faculty:IFaculty
     {
         string Name { get; set; }
+        
+        int facultyId { get; set; }
 
-        public List<Course> Courses { get; set; }
+        string departmentName { get; set; }
 
-        public Faculty(string name)
+        public List<Faculty> faculty { get; set; }
+
+        public List<Courses> coursesTaught { get; set; }
+
+        public Faculty(string name,int facId,string departmentName)
         {
-            Name = name;
-            Courses = new List<Course>();
+            this.Name = name;
+            this.facultyId = facId;
+            this.departmentName = departmentName;
+            this.faculty = new List<Faculty>();
+            this.coursesTaught = new List<Courses>();
         }
 
-        public void AddCourse(Course course)
-        {
-            Courses.Add(course);
-        }
-
-        public void RemoveCourse(Course course)
-        {
-            Courses.Remove(course);
-        }
-    }
-    public class FacultyList:IEnumerable<Faculty>
-    {
-
-        private List<Faculty> faculty = new List<Faculty>();
-
-       public void Add(Faculty fac)
+        public void addFaculty(Faculty fac)
         {
             faculty.Add(fac);
         }
 
-        public void Remove(Faculty fac)
+        public void removeFaculty(Faculty fac)
         {
             faculty.Remove(fac);
         }
 
-        
-
-        public IEnumerator<Faculty> GetEnumerator()
+        public void addCourse(Courses course)
         {
-            return faculty.GetEnumerator();
+            coursesTaught.Add(course);
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public void removeCourse(Courses course)
         {
-            return GetEnumerator();
+            coursesTaught.Remove(course);
         }
 
     }
+
 }
 
-public class Course
-{
-    public string Name { get; set; }
-   
 
-    public Course(string name)
-    {
-        Name = name;
-    }
-}

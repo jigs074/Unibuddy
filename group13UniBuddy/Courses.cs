@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace group13UniBuddy
 {
-    internal class Courses
+    public class Courses:ICourse
     {
+        string Name { get; set; }
+       public List<Courses> courses { get; set; }
+
+        public Courses(string Name)
+        {
+            courses = new List<Courses>();
+            this.Name = Name;
+        }
+
+        public void addCourse(Courses course)
+        {
+            courses.Add(course);
+        }
+
+        public void removeCourse(Courses course)
+        {
+            courses.Remove(course);
+        }
     }
 }
