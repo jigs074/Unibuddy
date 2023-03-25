@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace group13UniBuddy
 {
-    internal class Labs
+    public interface Iclubs
     {
+
     }
 }

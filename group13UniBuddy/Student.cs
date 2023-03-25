@@ -40,6 +40,8 @@ namespace group13UniBuddy
         {
             student.Remove(std);
         }
+
+
     }
    
        
