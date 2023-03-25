@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace group13UniBuddy
 {
-    public interface IStudent
+    public interface IAggregate
     {
-        public void addStudent(Student student);
-
-        public void removeStudent(Student student);
+        IIterator CreateIterator();
     }
 }
-
