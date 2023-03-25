@@ -14,6 +14,8 @@ namespace group13UniBuddy
             faculty();
             Console.WriteLine("\n");
             courses();
+            Console.WriteLine("\n");
+            recereation();
 
         }
 
@@ -71,8 +73,10 @@ namespace group13UniBuddy
                 Console.WriteLine("Name: " + fac.Name);
             }
 
+        }
 
-            // This is for Recreation    
+        public static void recereation()
+        {
             string[] activityNames = { "BasketBall", "Football", "Baseball", "Tennis" };
 
             // Create an activity object for each activity name and print the details
@@ -83,8 +87,6 @@ namespace group13UniBuddy
             }
 
             Console.ReadLine();
-
-
         }
        
 
