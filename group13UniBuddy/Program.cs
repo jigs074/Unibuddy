@@ -16,6 +16,7 @@ namespace group13UniBuddy
             courses();
             Console.WriteLine("\n");
             recereation();
+            Department();
 
         }
 
@@ -89,6 +90,19 @@ namespace group13UniBuddy
             Console.ReadLine();
         }
        
+        public static void Department()
+        {
+            List<Department> departments = new List<Department>();
+            Department department1 = new Department("Computer Science");
+            Department department2 = new Department("IT");
+            departments.Add(department1);
+            departments.Add(department2);
+            Console.WriteLine(department1.departmentName);
+            Console.WriteLine(department2.departmentName); 
+
+
+
+        }
 
     }
 

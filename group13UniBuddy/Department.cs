@@ -8,7 +8,7 @@ namespace group13UniBuddy
 {
     public class Department:IDepartment
     {
-        string departmentName { get; set; }
+         public string departmentName { get; set; }
 
         public List<Department> dept { get; set; }
 
