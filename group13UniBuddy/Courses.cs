@@ -8,13 +8,22 @@ namespace group13UniBuddy
 {
     public class Courses:ICourse
     {
-        string Name { get; set; }
+        public string Name { get; set; }
        public List<Courses> courses { get; set; }
 
+        public Courses()
+        {
+
+        }
         public Courses(string Name)
         {
             courses = new List<Courses>();
             this.Name = Name;
+        }
+
+        public IIterator CreateIterator()
+        {
+            return new CoursesIterator(courses);
         }
 
         public void addCourse(Courses course)
@@ -25,6 +34,29 @@ namespace group13UniBuddy
         public void removeCourse(Courses course)
         {
             courses.Remove(course);
+        }
+    }
+    public class CoursesIterator : IIterator
+    {
+        private List<Courses> courses;
+
+        private int position = -1;
+
+        public CoursesIterator(List<Courses> courses)
+        {
+            this.courses = courses;
+
+        }
+
+        public bool HasNext()
+        {
+            return position < courses.Count - 1;
+        }
+
+        public object Next()
+        {
+            position++;
+            return courses[position];
         }
     }
 }
