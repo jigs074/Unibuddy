@@ -8,7 +8,7 @@ using System.Globalization;
 
 namespace group13UniBuddy
 {
-    public class Student:IStudent
+    public class Student:IStudent,IAggregate
     {
         public string Name { get; set; }
         public int Age { get; set; }
@@ -20,6 +20,10 @@ namespace group13UniBuddy
 
         public List<Student> student { get; set; }
 
+        public Student()
+        {
+
+        }
         public Student(string Name,int Age,string Category,string Program,string StudentNo,string departmentName)
         {
             this.Name= Name;
@@ -40,6 +44,34 @@ namespace group13UniBuddy
         {
             student.Remove(std);
         }
+
+        public IIterator CreateIterator()
+        {
+            return new StudentIterator(student);
+        }
+
+        private class StudentIterator : IIterator
+        {
+            private List<Student> student;
+            private int position = -1;
+
+            public StudentIterator(List<Student> student)
+            {
+                this.student = student;
+            }
+
+            public bool HasNext()
+            {
+                return position < student.Count - 1;
+            }
+
+            public object Next()
+            {
+                position++;
+                return student[position];
+            }
+        }
+
 
 
     }
