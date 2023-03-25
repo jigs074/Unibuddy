@@ -41,6 +41,21 @@ namespace group13UniBuddy
                 Faculty fac  = (Faculty)iter.Next();
                 Console.WriteLine("Name: " + fac.Name);
             }
+
+
+            // This is for Recreation    
+            string[] activityNames = { "BasketBall", "Football", "Baseball", "Tennis" };
+
+            // Create an activity object for each activity name and print the details
+            foreach (string activityName in activityNames)
+            {
+                Activity activity = new Activity(activityName);
+                Console.WriteLine($"Activity: {activity.Name}, Scheduled Time: {activity.ScheduledTime}");
+            }
+
+            Console.ReadLine();
+
+
         }
        
 
