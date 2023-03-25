@@ -34,6 +34,7 @@ namespace group13UniBuddy
             this.departmentName = departmentName;
             this.faculty = new List<Faculty>();
             this.coursesTaught = new List<Courses>();
+
         }
 
         public void addFaculty(Faculty fac)
