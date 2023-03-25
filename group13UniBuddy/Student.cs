@@ -50,34 +50,31 @@ namespace group13UniBuddy
             return new StudentIterator(student);
         }
 
-        private class StudentIterator : IIterator
+    }
+    public class StudentIterator : IIterator
+    {
+        private List<Student> student;
+        private int position = -1;
+
+        public StudentIterator(List<Student> student)
         {
-            private List<Student> student;
-            private int position = -1;
-
-            public StudentIterator(List<Student> student)
-            {
-                this.student = student;
-            }
-
-            public bool HasNext()
-            {
-                return position < student.Count - 1;
-            }
-
-            public object Next()
-            {
-                position++;
-                return student[position];
-            }
+            this.student = student;
         }
 
+        public bool HasNext()
+        {
+            return position < student.Count - 1;
+        }
 
-
+        public object Next()
+        {
+            position++;
+            return student[position];
+        }
     }
-   
-       
-    
+
+
+
 }
 
 
