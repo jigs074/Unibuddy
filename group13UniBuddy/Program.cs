@@ -17,15 +17,7 @@ namespace group13UniBuddy
     new Student("Jainam", 21, "International", "BCS", "16945", "IT"),
     new Student("Akrem", 25, "Domestic", "BCS", "169695", "IT")
 };
-            /* Student s1 = new Student("Jignesh",19,"International","BCS","12445", "IT");
-
-             Student s2 = new Student("Jainam", 21, "International", "BCS", "16945", "IT");
-
-             Student s3 = new Student("Akrem",25, "Domestic", "BCS", "169695", "IT");
-            s1.addStudent(s1);
-            s2.addStudent(s2);
-            s3.addStudent(s3);*/
-
+            
             IIterator iterator = new StudentIterator(students);
             while (iterator.HasNext())
             {
