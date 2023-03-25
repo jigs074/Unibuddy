@@ -13,4 +13,4 @@ namespace group13UniBuddy
         public void removeStudent(Student student);
     }
 }
-}
+
