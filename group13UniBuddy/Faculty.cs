@@ -19,7 +19,14 @@ namespace group13UniBuddy
         public List<Faculty> faculty { get; set; }
 
         public List<Courses> coursesTaught { get; set; }
+        public Faculty()
+        {
 
+        }
+        public IIterator CreateIterator()
+        {
+            return new FacultyIterator(faculty);
+        }
         public Faculty(string name,int facId,string departmentName)
         {
             this.Name = name;
@@ -51,6 +58,29 @@ namespace group13UniBuddy
 
     }
 
+    public class FacultyIterator : IIterator
+    {
+        private List<Faculty> faculty;
+
+        private int position = -1;
+
+        public FacultyIterator(List<Faculty> faculty)
+        {
+            this.faculty = faculty; 
+
+        }
+
+        public bool HasNext()
+        {
+            return position < faculty.Count - 1;
+        }
+
+        public object Next()
+        {
+            position++;
+            return faculty[position];
+        }
+    }
 }
 
 
