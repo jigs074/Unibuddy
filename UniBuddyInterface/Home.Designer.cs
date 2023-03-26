@@ -87,6 +87,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "Recreation ";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -96,6 +97,7 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "Clubs ";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
@@ -105,6 +107,7 @@
             this.button7.TabIndex = 12;
             this.button7.Text = "Courses";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox6
             // 

@@ -53,6 +53,7 @@ namespace UniBuddyInterface
                         MessageBox.Show("Login Successful!");
                         studentPage studentPage = new studentPage();
                         studentPage.Show();
+                        return;
                     }
                 }
             }

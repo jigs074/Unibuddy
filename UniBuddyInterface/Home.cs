@@ -41,5 +41,26 @@ namespace UniBuddyInterface
             departmentLog dlog = new departmentLog();
             dlog.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            RecreationPage rec = new RecreationPage();
+            rec.Show();
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ClubsPage clubPage = new ClubsPage();
+            clubPage.Show(); 
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            CoursePage coursePage = new CoursePage();
+            coursePage.Show(); 
+
+        }
     }
 }
