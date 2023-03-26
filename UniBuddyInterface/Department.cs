@@ -12,10 +12,16 @@ namespace UniBuddyInterface
 
         public List<Department> dept { get; set; }
 
+        public Department() { }
         public Department(string deptName)
         {
             dept = new List<Department>();
             this.departmentName =deptName;
+        }
+
+        public IIterator CreateIterator()
+        {
+            return new DepartmentIterator(dept);
         }
 
         public void addDepartment(Department department)
@@ -48,6 +54,30 @@ namespace UniBuddyInterface
                     Console.WriteLine("Faculty:" + fac.Name + "\nDepartment: " + fac.departmentName);
                 }
             }
+        }
+    }
+
+    public class DepartmentIterator : IIterator
+    {
+        private List<Department> dept;
+
+        private int position = -1;
+
+        public DepartmentIterator(List<Department> dept)
+        {
+            this.dept = dept;
+
+        }
+
+        public bool HasNext()
+        {
+            return position < dept.Count - 1;
+        }
+
+        public object Next()
+        {
+            position++;
+            return dept[position];
         }
     }
 }

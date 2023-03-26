@@ -12,9 +12,47 @@ namespace UniBuddyInterface
 {
     public partial class departmentPage : Form
     {
+        List<Department> dept = new List<Department>();
         public departmentPage()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Department d = new Department();
+            d.departmentName = textBox1.Text;
+            dept.Add(d);
+            MessageBox.Show("Course Added Successfully!");
+            textBox1.Text = "";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string deptName = textBox2.Text;
+            Department deptToRemove = dept.FirstOrDefault(c => c.departmentName == deptName);
+            if (deptToRemove != null)
+            {
+                dept.Remove(deptToRemove);
+                MessageBox.Show("Course Removed Successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Course not found!");
+            }
+            textBox2.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            IIterator iterator = new DepartmentIterator(dept);
+            richTextBox1.Text = ""; // Clear the text before displaying the courses
+            while (iterator.HasNext())
+            {
+                Department de = (Department)iterator.Next();
+                richTextBox1.Text += de.departmentName + "\n"; // Concatenate the name of each course with a newline character
+            }
         }
     }
 }

@@ -150,6 +150,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(552, 191);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // pictureBox2
             // 
@@ -169,6 +170,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(552, 291);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // CoursePage
             // 
