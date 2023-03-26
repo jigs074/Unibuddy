@@ -28,7 +28,6 @@ namespace UniBuddyInterface
             if (idInput == actualId && passwordInput == actualPassword)
             {
                 MessageBox.Show("Logged In!");
-               
             }
             else
             {
