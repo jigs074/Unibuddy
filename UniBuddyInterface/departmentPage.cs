@@ -23,7 +23,7 @@ namespace UniBuddyInterface
             Department d = new Department();
             d.departmentName = textBox1.Text;
             dept.Add(d);
-            MessageBox.Show("Course Added Successfully!");
+            MessageBox.Show("Department Added Successfully!");
             textBox1.Text = "";
         }
 
@@ -34,11 +34,11 @@ namespace UniBuddyInterface
             if (deptToRemove != null)
             {
                 dept.Remove(deptToRemove);
-                MessageBox.Show("Course Removed Successfully!");
+                MessageBox.Show("Department Removed Successfully!");
             }
             else
             {
-                MessageBox.Show("Course not found!");
+                MessageBox.Show("Department not found!");
             }
             textBox2.Text = "";
         }
