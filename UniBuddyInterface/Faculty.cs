@@ -12,13 +12,13 @@ namespace UniBuddyInterface
     {
         public string Name { get; set; }
         
-        public int facultyId { get; set; }
+        public string facultyId { get; set; }
 
         public string departmentName { get; set; }
 
         public List<Faculty> faculty { get; set; }
 
-        public List<Courses> coursesTaught { get; set; }
+        public string courseTaught { get; set; }
         public Faculty()
         {
 
@@ -27,13 +27,14 @@ namespace UniBuddyInterface
         {
             return new FacultyIterator(faculty);
         }
-        public Faculty(string name,int facId,string departmentName)
+        public Faculty(string name,string facId,string departmentName,string courseTaught)
         {
             this.Name = name;
             this.facultyId = facId;
+            this.courseTaught = courseTaught;
             this.departmentName = departmentName;
             this.faculty = new List<Faculty>();
-            this.coursesTaught = new List<Courses>();
+            
 
         }
 
@@ -47,15 +48,6 @@ namespace UniBuddyInterface
             faculty.Remove(fac);
         }
 
-        public void addCourse(Courses course)
-        {
-            coursesTaught.Add(course);
-        }
-
-        public void removeCourse(Courses course)
-        {
-            coursesTaught.Remove(course);
-        }
 
     }
 
