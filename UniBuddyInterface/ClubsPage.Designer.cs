@@ -32,9 +32,11 @@
             // 
             // ClubsPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 812);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(1071, 650);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ClubsPage";
             this.Text = "ClubsPage";
             this.ResumeLayout(false);

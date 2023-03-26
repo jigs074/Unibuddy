@@ -47,6 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(1098, 682);
             this.Controls.Add(this.pictureBox2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

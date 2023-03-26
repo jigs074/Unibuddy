@@ -53,10 +53,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 186);
+            this.button1.Location = new System.Drawing.Point(80, 186);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 41);
+            this.button1.Size = new System.Drawing.Size(151, 41);
             this.button1.TabIndex = 6;
             this.button1.Text = "Student Manager";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,10 +64,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(484, 186);
+            this.button2.Location = new System.Drawing.Point(462, 186);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 41);
+            this.button2.Size = new System.Drawing.Size(130, 41);
             this.button2.TabIndex = 7;
             this.button2.Text = "Faculty Manager";
             this.button2.UseVisualStyleBackColor = true;
@@ -97,10 +97,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(484, 467);
+            this.button5.Location = new System.Drawing.Point(463, 467);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(108, 41);
+            this.button5.Size = new System.Drawing.Size(129, 41);
             this.button5.TabIndex = 10;
             this.button5.Text = "Clubs Manager";
             this.button5.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(893, 467);
+            this.button7.Location = new System.Drawing.Point(874, 467);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(108, 41);
+            this.button7.Size = new System.Drawing.Size(148, 41);
             this.button7.TabIndex = 12;
             this.button7.Text = "Courses Manager";
             this.button7.UseVisualStyleBackColor = true;
@@ -198,6 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(1096, 653);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.button7);
