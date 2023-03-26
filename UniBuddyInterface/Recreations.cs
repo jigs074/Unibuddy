@@ -35,6 +35,24 @@ namespace UniBuddyInterface
             return "4:00 PM";
         }
     }
+    public class Cricket : IRecreation
+    {
+        public string getSchedule()
+        {
+            return "2:00 PM"; 
+
+        }
+    }
+
+    public class Tennis : IRecreation
+    {
+        public string getSchedule()
+        {
+            return "1:00 PM";
+
+        }
+    }
+
 
     // Define a factory class to create instances of recreation activities
     public class RecreationFactory
@@ -44,6 +62,7 @@ namespace UniBuddyInterface
             if (activityName == "BasketBall")
             {
                 return new Basketball();
+                
 
             }
             else if (activityName == "Football")
@@ -54,6 +73,16 @@ namespace UniBuddyInterface
             else if (activityName == "Baseball")
             {
                 return new Baseball();
+
+            }
+            else if (activityName == "Tennis")
+            {
+                return new Tennis(); 
+            }
+
+            else if (activityName == "Cricket")
+            {
+                return new Cricket(); 
 
             }
             else
