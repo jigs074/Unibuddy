@@ -190,7 +190,13 @@
     <None Include="Resources\CodingAvatar.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\students.jpeg" />
     <None Include="Resources\recreation.jpeg" />
+    <None Include="Resources\recreation1.jpeg" />
+    <None Include="Resources\courses.jpeg" />
+    <None Include="Resources\faculty.jpeg" />
+    <None Include="Resources\department.jpeg" />
+    <None Include="Resources\clubs.jpeg" />
     <Content Include="Resources\studentCredentials.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
