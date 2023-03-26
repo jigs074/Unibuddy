@@ -11,14 +11,10 @@ namespace group13UniBuddy
     {
         public static void Main(string[] args)
         {
-            student();
-            Console.WriteLine("\n");
-            faculty();
-            Console.WriteLine("\n");
+            
             courses();
-            Console.WriteLine("\n");
-            recereation();
-            Department();
+            
+            
 
         }
 
@@ -44,12 +40,12 @@ namespace group13UniBuddy
 
         public static void courses()
         {
-            List<Courses> courses = new List<Courses>()
-              {
+            
+            /*  {
              new Courses("Mobile Networking"),
               new Courses("Software Design Techniques"),
             new Courses("Probability and Stats")
-                };
+                };*/
 
 
             IIterator iterator = new CoursesIterator(courses);
