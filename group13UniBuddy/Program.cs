@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static group13UniBuddy.Clubs;
+
 namespace group13UniBuddy
 {
     public class Program
@@ -58,6 +60,23 @@ namespace group13UniBuddy
             }
         }
 
+        public static void clubs()
+        {
+            List<Clubs> clubs = new List<Clubs>()
+            {
+                new Clubs("Google Devs","Research Club"),
+              new Clubs ("Awareness Initiative","Community Club"),
+            new Clubs("Spirit Up","Sports Club")
+            };
+
+            IIterator iterator = new ClubsIterator(clubs);
+            while (iterator.HasNext())
+            {
+                Clubs club = (Clubs)iterator.Next();
+                Console.WriteLine("Name: " + club.ClubName);
+            }
+        }
+
         public static void faculty()
         {
             List<Faculty> faculties = new List<Faculty>()
@@ -77,7 +96,7 @@ namespace group13UniBuddy
 
         }
 
-        public static void recereation()
+        public static void recreeation()
         {
             string[] activityNames = { "BasketBall", "Football", "Baseball", "Tennis" };
 
