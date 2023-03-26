@@ -24,6 +24,7 @@ namespace group13UniBuddy
         {
             List<Student> students = new List<Student>()
               {
+
              new Student("Jignesh", 19, "International", "BCS", "12445", "IT"),
               new Student("Jainam", 21, "International", "BCS", "16945", "IT"),
             new Student("Akrem", 25, "Domestic", "BCS", "169695", "IT")

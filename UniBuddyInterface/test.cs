@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace group13UniBuddy
+namespace UniBuddyInterface
 {
-    public class Admin
+    public class test
     {
         private int i = 0;
         public string ID = "Admin";
-        public string password = "123456";
+        public string password = "Admin";
 
         public void giveAccess()
         {
-            for(i = 0;i<3;i++)
+            for (i = 0; i < 3; i++)
             {
                 Console.WriteLine("Enter Id:");
                 string id = Console.ReadLine();
                 Console.WriteLine("Enter Password:");
                 string pass = Console.ReadLine();
 
-                if(ID==id && password == pass)
+                if (ID == id && password == pass)
                 {
                     Console.WriteLine("Admin Access Granted!");
                 }
@@ -31,7 +31,7 @@ namespace group13UniBuddy
                 }
             }
         }
+
+
     }
 }
-
-    
