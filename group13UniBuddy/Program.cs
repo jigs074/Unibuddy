@@ -17,14 +17,16 @@ namespace group13UniBuddy
             Console.WriteLine("\n");
             courses();
             Console.WriteLine("\n");
-            recreeation();
-            clubs();
+            recereation();
+            Department();
+
         }
 
         public static void student()
         {
             List<Student> students = new List<Student>()
               {
+
              new Student("Jignesh", 19, "International", "BCS", "12445", "IT"),
               new Student("Jainam", 21, "International", "BCS", "16945", "IT"),
             new Student("Akrem", 25, "Domestic", "BCS", "169695", "IT")
@@ -108,6 +110,19 @@ namespace group13UniBuddy
             Console.ReadLine();
         }
        
+        public static void Department()
+        {
+            List<Department> departments = new List<Department>();
+            Department department1 = new Department("Computer Science");
+            Department department2 = new Department("IT");
+            departments.Add(department1);
+            departments.Add(department2);
+            Console.WriteLine(department1.departmentName);
+            Console.WriteLine(department2.departmentName); 
+
+
+
+        }
 
     }
 
