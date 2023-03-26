@@ -35,6 +35,7 @@ namespace UniBuddyInterface
             clubs.addClub(clubs); 
             MessageBox.Show("Club Added Successfully!");
             textBox1.Text = "";
+            textBox3.Text = "";
 
 
 
@@ -42,13 +43,20 @@ namespace UniBuddyInterface
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string clubName = textBox2.Text;
-            string clubType = textBox4.Text;
+            
+            Clubs c = clubList.FirstOrDefault(x => x.ClubName == textBox2.Text && x.ClubType == textBox4.Text);
+            if (c != null)
+            {
+                clubList.Remove(c);
+                MessageBox.Show("Club Removed Successfully!");
+                textBox1.Text = "";
+                textBox3.Text = "";
 
-            Clubs clubs = new Clubs(clubName, clubType);
-            clubList.Remove(clubs);
-            clubs.removeClub(clubs); 
-            MessageBox.Show("Club Removed Successfully");
+            }
+            else
+            {
+                MessageBox.Show("Club not found!");
+            }
 
         }
 
@@ -60,7 +68,7 @@ namespace UniBuddyInterface
             while (iterator.HasNext())
             {
                 Clubs clubs = (Clubs)iterator.Next();
-                richTextBox1.Text += clubs.ClubName +  "\n" +   clubs.ClubType + "\n";
+                richTextBox1.Text += "Club Name: " + clubs.ClubName +  "\n" +   "Club Type: " + clubs.ClubType + "\n\n";
 
 
 

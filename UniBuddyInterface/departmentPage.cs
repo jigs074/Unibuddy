@@ -51,7 +51,7 @@ namespace UniBuddyInterface
             while (iterator.HasNext())
             {
                 Department de = (Department)iterator.Next();
-                richTextBox1.Text += de.departmentName + "\n"; // Concatenate the name of each course with a newline character
+                richTextBox1.Text += "Department Name: " + de.departmentName + "\n"; // Concatenate the name of each course with a newline character
             }
         }
     }

@@ -60,7 +60,7 @@ namespace UniBuddyInterface
             while (iterator.HasNext())
             {
                 Faculty faculty = (Faculty)iterator.Next();
-                richTextBox1.Text += faculty.Name + "\n" + faculty.facultyId + "\n" + faculty.departmentName + "\n" + faculty.courseTaught + "\n\n"; // Concatenate the name of each course with a newline character
+                richTextBox1.Text += "Faculty Name: " + faculty.Name + "\n" + "Faculty Id: " + faculty.facultyId + "\n" + "Department Name: " + faculty.departmentName + "\n" + "Course Assigned: " + faculty.courseTaught + "\n\n"; // Concatenate the name of each course with a newline character
             }
         }
     }

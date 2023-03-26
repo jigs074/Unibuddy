@@ -36,7 +36,7 @@ namespace UniBuddyInterface
         private void button2_Click(object sender, EventArgs e)
         {
             string studentName = textBox2.Text;
-            Student studentToRemove = students.FirstOrDefault(student => student.Name == studentName);
+            Student studentToRemove = students.FirstOrDefault(c => c.Name == studentName);
             if (studentToRemove != null)
             {
                 students.Remove(studentToRemove);
@@ -44,7 +44,7 @@ namespace UniBuddyInterface
             }
             else
             {
-                MessageBox.Show("Student not Found!!");
+                MessageBox.Show("Student not found!");
             }
             textBox2.Text = "";
         }
@@ -58,7 +58,7 @@ namespace UniBuddyInterface
                 Student student = (Student)iterator.Next();
 
 
-                richTextBox1.Text += student.Name + "\n"; 
+                richTextBox1.Text += "Name: " + student.Name + "\n"; 
 
             }
         }

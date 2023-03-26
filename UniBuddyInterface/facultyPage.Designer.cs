@@ -60,6 +60,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(544, 389);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
@@ -99,58 +100,66 @@
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(12, 148);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 22);
+            this.textBox2.Size = new System.Drawing.Size(208, 29);
             this.textBox2.TabIndex = 20;
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(12, 84);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 22);
+            this.textBox1.Size = new System.Drawing.Size(208, 30);
             this.textBox1.TabIndex = 19;
             // 
             // textBox3
             // 
+            this.textBox3.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(12, 215);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 22);
+            this.textBox3.Size = new System.Drawing.Size(208, 29);
             this.textBox3.TabIndex = 27;
             // 
             // textBox4
             // 
+            this.textBox4.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(15, 281);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(208, 22);
+            this.textBox4.Size = new System.Drawing.Size(208, 29);
             this.textBox4.TabIndex = 29;
             // 
             // textBox5
             // 
+            this.textBox5.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(297, 84);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(208, 22);
+            this.textBox5.Size = new System.Drawing.Size(208, 29);
             this.textBox5.TabIndex = 31;
             // 
             // textBox6
             // 
+            this.textBox6.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(297, 148);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(208, 22);
+            this.textBox6.Size = new System.Drawing.Size(208, 29);
             this.textBox6.TabIndex = 37;
             // 
             // textBox7
             // 
+            this.textBox7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(297, 215);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(208, 22);
+            this.textBox7.Size = new System.Drawing.Size(208, 29);
             this.textBox7.TabIndex = 35;
             // 
             // textBox8
             // 
+            this.textBox8.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(297, 281);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(208, 22);
+            this.textBox8.Size = new System.Drawing.Size(208, 29);
             this.textBox8.TabIndex = 33;
             // 
             // pictureBox2
