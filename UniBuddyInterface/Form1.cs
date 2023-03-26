@@ -48,10 +48,16 @@ namespace UniBuddyInterface
             if(idInput == actualId && passwordInput == actualPassword)
             {
                 MessageBox.Show("Logged In!");
-            }
 
+            }
+            else
+            {
+                MessageBox.Show("Invalid Credentials!");
+            }
             Home home = new Home();
             home.Show();
+
+
         }
     }
 }

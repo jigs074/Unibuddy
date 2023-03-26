@@ -11,32 +11,22 @@ using System.Windows.Forms;
 
 namespace UniBuddyInterface
 {
-    public partial class studentLogincs : Form
+    public partial class facultyLogin : Form
     {
-        public studentLogincs()
+        public facultyLogin()
         {
             InitializeComponent();
-        }
-
-        private void studentLogincs_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Get the path to the file
-            string filePath = "studentCredentials.txt";
+            string filePath = "facultyCredentials.txt";
 
             // Ask the user for their ID and password
-            
+
             string userId = textBox1.Text;
-            
+
             string password = textBox2.Text;
 
             // Read the file line by line and check for a matching ID and password
@@ -51,18 +41,15 @@ namespace UniBuddyInterface
                     if (userId == storedId && password == storedPassword)
                     {
                         MessageBox.Show("Login Successful!");
-                        studentPage studentPage = new studentPage();
-                        studentPage.Show();
+                        facultyPage facultyPage = new facultyPage();
+                        facultyPage.Show();
+                        return;
                     }
                 }
             }
 
             // If a matching ID and password were not found, display an error message
             MessageBox.Show("Invalid user ID or password.");
-            
-
-
-
         }
     }
 }

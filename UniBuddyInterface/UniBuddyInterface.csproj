@@ -50,7 +50,32 @@
     <Compile Include="Clubs.cs" />
     <Compile Include="Courses.cs" />
     <Compile Include="Department.cs" />
+    <Compile Include="departmentLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departmentLog.Designer.cs">
+      <DependentUpon>departmentLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="departmentLogin.cs" />
+    <Compile Include="departmentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departmentPage.Designer.cs">
+      <DependentUpon>departmentPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Faculty.cs" />
+    <Compile Include="facultyLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facultyLogin.Designer.cs">
+      <DependentUpon>facultyLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facultyPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facultyPage.Designer.cs">
+      <DependentUpon>facultyPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,7 +105,25 @@
     <Compile Include="studentLogincs.Designer.cs">
       <DependentUpon>studentLogincs.cs</DependentUpon>
     </Compile>
+    <Compile Include="studentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentPage.Designer.cs">
+      <DependentUpon>studentPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="test.cs" />
+    <EmbeddedResource Include="departmentLog.resx">
+      <DependentUpon>departmentLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departmentPage.resx">
+      <DependentUpon>departmentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facultyLogin.resx">
+      <DependentUpon>facultyLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facultyPage.resx">
+      <DependentUpon>facultyPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +143,9 @@
     <EmbeddedResource Include="studentLogincs.resx">
       <DependentUpon>studentLogincs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="studentPage.resx">
+      <DependentUpon>studentPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +161,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CodingAvatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\studentCredentials.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,18 @@ namespace UniBuddyInterface
             studentLogincs studentlogin = new studentLogincs();
             studentlogin.Show();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            facultyLogin flogin = new facultyLogin();
+            flogin.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            departmentLog dlog = new departmentLog();
+            dlog.Show();
         }
     }
 }
