@@ -32,9 +32,10 @@
             // 
             // studentPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1239, 708);
+            this.ClientSize = new System.Drawing.Size(1101, 688);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "studentPage";
             this.Text = "studentPage";
             this.ResumeLayout(false);

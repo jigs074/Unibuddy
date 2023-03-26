@@ -51,5 +51,10 @@ namespace UniBuddyInterface
             // If a matching ID and password were not found, display an error message
             MessageBox.Show("Invalid user ID or password.");
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
