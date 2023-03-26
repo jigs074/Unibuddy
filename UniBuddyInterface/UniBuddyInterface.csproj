@@ -101,6 +101,7 @@
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="IAggregate.cs" />
+    <Compile Include="Iclubs.cs" />
     <Compile Include="ICourse.cs" />
     <Compile Include="IDepartment.cs" />
     <Compile Include="IFaculty.cs" />

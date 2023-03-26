@@ -83,6 +83,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(234, 26);
             this.textBox2.TabIndex = 19;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -91,6 +92,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(234, 26);
             this.textBox1.TabIndex = 18;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -100,6 +102,7 @@
             this.label5.Size = new System.Drawing.Size(112, 20);
             this.label5.TabIndex = 17;
             this.label5.Text = "Student Name";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -109,6 +112,7 @@
             this.label4.Size = new System.Drawing.Size(112, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Student Name";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -118,6 +122,7 @@
             this.label3.Size = new System.Drawing.Size(150, 20);
             this.label3.TabIndex = 15;
             this.label3.Text = "Display All Students\r\n";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -127,15 +132,17 @@
             this.label2.Size = new System.Drawing.Size(129, 20);
             this.label2.TabIndex = 14;
             this.label2.Text = "Remove Student";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 63);
+            this.label1.Location = new System.Drawing.Point(100, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 20);
             this.label1.TabIndex = 13;
             this.label1.Text = "Add Students";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // richTextBox1
             // 

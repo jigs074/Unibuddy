@@ -6,34 +6,59 @@ using System.Threading.Tasks;
 
 namespace UniBuddyInterface
 {
-    public class Clubs
+    public class Clubs : Iclubs
     {
-        string ClubName;
-        string ClubType;
-        private List<string> clubList; 
-
+         public string ClubName;
+        public string ClubType;
+        // private List<string> clubList; 
+        public List<Clubs> clubList { get; set; }
 
         public Clubs(string clubName, string clubType)
-       
+
         {
             ClubName = clubName;
             ClubType = clubType;
-            this.clubList = new List<string>();
-        }
-
-        public void createClub(string ClubName, string ClubType)
-        {
-            
-             clubList.Add(ClubName);
-
-
-    }
-
-        public void removeClub(string ClubName, string ClubType)
-        {
-            clubList.Remove(ClubName);
+            clubList = new List<Clubs>();
 
         }
 
+        public void addClub(Clubs club)
+        {
+            clubList.Add(club);
+
+
+        }
+
+        public void removeClub(Clubs club)
+        {
+            clubList.Remove(club);
+
+
+        }
     }
-}
+
+        public class ClubIterator : IIterator
+        {
+            private List<Clubs> clubList;
+
+            private int position = -1;
+
+            public ClubIterator(List<Clubs> clubList)
+            {
+                this.clubList = clubList;
+
+            }
+
+            public bool HasNext()
+            {
+                return position < clubList.Count - 1;
+            }
+
+            public object Next()
+            {
+                position++;
+                return clubList[position];
+            }
+        }
+    }
+
