@@ -28,6 +28,14 @@ namespace UniBuddyInterface
             Student student = new Student();
 
             student.Name = textBox1.Text;
+            student.Age = int.Parse(textBox4.Text);
+            student.StudentNo = textBox3.Text;
+            student.Category = textBox5.Text; 
+
+
+
+
+
             students.Add(student);
             MessageBox.Show("Student Added Successfully!");
             textBox1.Text = "";
@@ -36,6 +44,13 @@ namespace UniBuddyInterface
         private void button2_Click(object sender, EventArgs e)
         {
             string studentName = textBox2.Text;
+            int studentAge = int.Parse(textBox7.Text);
+
+            string studentNo =textBox6.Text;
+
+            string studentCategory = textBox8.Text; 
+            
+
             Student studentToRemove = students.FirstOrDefault(c => c.Name == studentName);
             if (studentToRemove != null)
             {
@@ -58,7 +73,8 @@ namespace UniBuddyInterface
                 Student student = (Student)iterator.Next();
 
 
-                richTextBox1.Text += "Name: " + student.Name + "\n"; 
+                richTextBox1.Text += "Name: " + student.Name + "\n" + "Student Id: " +student.StudentNo+ "\n" + "Student's Age: " +student.Age+ "\n" +"Student's Category: " +student.Category;
+                
 
             }
         }
@@ -99,6 +115,16 @@ namespace UniBuddyInterface
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }
